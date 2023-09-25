@@ -1,0 +1,140 @@
+/* **************************************
+*    RESPONSIVE FOR OTHER DEVICES
+**************************************/
+/* XX-Large devices (larger desktops, 1400px upto) */
+@media (max-width: 1400px) {
+}
+
+/*  X-Large devices (large desktops, 1200px upto) */
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px upto) */
+@media (max-width: 992px) {
+	:root {
+		--fs-lg: 2.375rem; /* 38px*/
+		--fs-xl-2: 4.325rem; /* 70px*/
+	}
+}
+
+/* Medium devices (tablets, 768px upto) */
+@media (max-width: 768px) {
+    /* reused changes */
+    .section-title{
+        font-size: var(--fs-1);
+    }
+	/* header */
+	.mobile-absolute {
+		display: none;
+	}
+	/* hero */
+	.inner-hero {
+		height: 100vh;
+	}
+	.right-side .xl-2 {
+		width: 100%;
+		font-size: var(--fs-1);
+	}
+	.circle li {
+		font-size: var(--fs-4);
+	}
+	.btn {
+		letter-spacing: 1px;
+		font-size: var(--fs-5);
+		padding: 10px 20px;
+	}
+	.left-side {
+		padding-left: 20px;
+	}
+	.left-side .lg {
+		width: 100%;
+		font-size: var(--fs-1);
+	}
+	/* service */
+	.inner-service h1 {
+		width: 400px;
+		
+	}
+	.service-main {
+		flex-wrap: wrap;
+	}
+	.service-box {
+		width: 100%;
+		border-bottom: 2px solid #93a3a3;
+		border-right: 0;
+	}
+    .service-box:last-child{
+        border-bottom: none;
+    }
+}
+
+/* 
+landscape phones, 576px upto
+ */
+@media (max-width: 576px) {
+	/* reused changes */
+    .section-title{
+        font-size: var(--fs-2);
+    }
+	/* header */
+    
+	.inline-header {
+		padding-inline: 10px;
+	}
+	.nav-btn {
+		display: block;
+	}
+	.close-btn {
+		display: initial;
+		margin-bottom: 30px;
+	}
+	.navbar {
+		transition: var(--transition-1);
+		padding: 20px;
+		position: fixed;
+		top: 0;
+		left: -250px;
+		background-color: #fff;
+		height: 100vh;
+		width: 100%;
+		max-width: 250px;
+		z-index: 1000;
+	}
+	.navbar.active {
+		left: 0;
+	}
+	.navbar-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.overlay {
+		width: 100%;
+		height: 100vh;
+		background-color: var(--black-color);
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 0.7;
+		transition: var(--transition-1);
+	}
+
+	/* service */
+    .inner-service h1{
+        width: 278px;
+        
+
+    }
+    .service-title {
+        font-size: var(--fs-3);
+    }
+    .section-text {
+        font-size: var(--fs-5);
+    }
+    /* digital section */
+    .inner-digital {
+        flex-direction: column-reverse;
+    }
+    .inner-digital > *{
+        width: 100%;
+    }
+}

@@ -14,7 +14,7 @@
 	--secondary-font: ;
 	--fs-xl-2: 6.625rem; /*138px*/
 	--fs-xl-1: 5.5rem; /*88px*/
-	--fs-xl: 4.125rem; /*66px*/
+	--fs-xl: 3.75rem; /*66px*/
 	--fs-lg: 3.625rem; /*58px*/
 	--fs-1: 2.8rem; /*44.8px*/
 	--fs-2: 1.8rem; /*28.8px*/
@@ -74,7 +74,7 @@ button {
 *     REUSED STYLES
 *********************** */
 .container {
-	max-width: 1400px;
+	max-width: 1440px;
 	margin: 0 auto;
 }
 .img-cover {
@@ -83,7 +83,7 @@ button {
 .btn {
 	letter-spacing: 1.5px;
 	display: inline-block;
-	font-size: var(--fs-4);
+	font-size: 20px;
 	padding: 15px 30px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -92,6 +92,27 @@ button {
 }
 .btn-black {
 	background-color: var(--black-color);
+}
+.bg-btn{
+	text-align: center;
+	min-width: 150px;
+	background: url(../images/btnbg.png) no-repeat;
+	background-position: bottom 7px left 0px;
+}
+.text-center {
+	text-align: center;
+}
+.color-span {
+	color: var(--primary-color);
+}
+.section-title {
+	margin: 0 auto;
+	font-size: var(--fs-xl);
+	word-wrap: break-word;
+}
+.section-text {
+	color: #878e8e;
+	font-size: var(--fs-4);
 }
 
 /* ***********************
@@ -202,103 +223,65 @@ button {
 .mobile-absolute img {
 	width: 100%;
 }
+
 /* **************************************
-*    RESPONSIVE FOR OTHER DEVICES
+*    SERVICE SECTION STYLES
 **************************************/
-/* XX-Large devices (larger desktops, 1400px upto) */
-@media (max-width: 1400px) {
+.inner-service {
+	padding-inline: 20px;
+	padding-block-start: 80px;
+}
+.inner-service h1{
+	padding-block-end: 40px;
+	width: 500px;
+}
+.service-main {
+	max-width: 1320px;
+	margin: 0 auto;
+	background-color: #bee5e7;
+	border-radius: 20px;
+	padding-block: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+.service-box {
+	width: 33.33%;
+	padding: 40px;
+	border-right: 2px solid #93a3a3;
+}
+.service-box:last-child {
+	border-right: none;
+}
+.service-main img {
+	margin: 0 auto;
+	max-width: 100%;
+}
+.service-title {
+	font-size: var(--fs-2);
+	padding-block: 10px;
 }
 
-/*  X-Large devices (large desktops, 1200px upto) */
-@media (max-width: 1200px) {
+/* **************************************
+*    DIGITAL SECTION STYLES
+**************************************/
+.inner-digital {
+	padding-inline: 20px;
+	display: flex;
+	align-items: center;
+}
+.digital-left {
+	width: 50%;
+}
+.digital-right {
+	width: 50%;
+	margin-block-start: -40px;
+}
+.inner-digital .section-title{
+	padding-block-end: 20px;
 }
 
-/* Large devices (desktops, 992px upto) */
-@media (max-width: 992px) {
-	:root {
-		--fs-lg: 2.375rem; /* 38px*/
-		--fs-xl-2: 4.325rem; /* 70px*/
-	}
-}
-
-/* Medium devices (tablets, 768px upto) */
-@media (max-width: 768px) {
-	.mobile-absolute {
-		display: none;
-	}
-	.inner-hero {
-		height: 100vh;
-	}
-	.right-side .xl-2 {
-		width: 100%;
-		font-size: var(--fs-1);
-	}
-	.circle li {
-		font-size: var(--fs-4);
-	}
-	.btn {
-		letter-spacing: 1px;
-		font-size: var(--fs-5);
-		padding: 10px 20px;
-	}
-	.left-side {
-		padding-left: 20px;
-	}
-	.left-side .lg {
-		width: 100%;
-		font-size: var(--fs-1);
-	}
-}
-
-/* 
-landscape phones, 576px upto
- */
-@media (max-width: 576px) {
-	/* reused styles */
-	.inline-header {
-		padding-inline: 10px;
-	}
-	/* header */
-
-	.nav-btn {
-		display: block;
-	}
-	.close-btn {
-		display: initial;
-		margin-bottom: 30px;
-	}
-	.navbar {
-		transition: var(--transition-1);
-		padding: 20px;
-		position: fixed;
-		top: 0;
-		left: -250px;
-		background-color: #fff;
-		height: 100vh;
-		width: 100%;
-		max-width: 250px;
-		z-index: 1000;
-	}
-	.navbar.active {
-		left: 0;
-	}
-	.navbar-list {
-		display: flex;
-		flex-direction: column;
-	}
-	.overlay {
-		width: 100%;
-		height: 100vh;
-		background-color: var(--black-color);
-		position: fixed;
-		top: 0;
-		left: 0;
-		opacity: 0.7;
-		transition: var(--transition-1);
-	}
-	.overlay.active {
-		z-index: 10;
-		display: block;
-	}
-	/* hero */
-}
+/* **************************************
+*    COMMIT SECTION STYLES
+**************************************/
