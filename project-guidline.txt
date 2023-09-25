@@ -1,0 +1,13 @@
+/* must have to define this color */
+/* 
+1. --primary-color
+2. --secondary-color
+3. --success-color
+4. --danger-color
+5. --black-color -optional
+6. --white-color -optional
+7. --dark-color
+8. --light-color
+9. --body-bg-color 
+
+*/
