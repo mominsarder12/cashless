@@ -30,7 +30,13 @@
 	/* hero */
 	.inner-hero {
 		height: 100vh;
+		flex-direction: column;
 	}
+	.right-side {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	margin-top: -150px;
+}
 	.right-side .xl-2 {
 		width: 100%;
 		font-size: var(--fs-1);

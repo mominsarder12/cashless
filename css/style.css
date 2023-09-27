@@ -77,6 +77,13 @@ button {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
+
+.container-xxl{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
 .img-cover {
 	object-fit: cover;
 }
@@ -249,7 +256,7 @@ button {
 .service-box {
 	width: 33.33%;
 	padding: 40px;
-	border-right: 2px solid #93a3a3;
+	border-right: 1px solid #93a3a3;
 }
 .service-box:last-child {
 	border-right: none;
@@ -347,7 +354,7 @@ button {
 **************************************/
 
 .inner-app {
-	border: 1px solid red;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -384,9 +391,13 @@ button {
 /* **************************************
 *    Footer SECTION STYLES
 **************************************/
+#footer{
+	margin: 90px 50px 40px 50px;
+}
+
 .inner-footer{
 	background-color: #c0e4e6;;
-	padding: 20px;
+	padding: 30px 50px;
 }
 .top-footer {
 	display: flex;
