@@ -38,3 +38,33 @@ addEventOnElement(closeBtn, "click", clickToRedirect);
 
 
 
+// jQuery(document).ready(function ($) {
+// 	$('.play-video-play').magnificPopup({
+// 		type:'video',
+// 		// callbacks: {
+// 		//   elementParse: function(item) {
+// 		// 	// Function will fire for each target element
+// 		// 	// "item.el" is a target DOM element (if present)
+// 		// 	// "item.src" is a source that you may modify
+	  
+// 		// 	console.log(item); // Do whatever you want with "item" object
+// 		//   }
+// 		// }
+// 	});
+	
+// });
+
+$(document).ready(function() {
+    $('.mfp-iframe').magnificPopup({
+      type: 'iframe',
+      iframe: {
+        patterns: {
+          youtube: {
+            index: 'youtube.com/',
+            id: 'v=',
+            src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+          }
+        }
+      }
+    });
+  });
